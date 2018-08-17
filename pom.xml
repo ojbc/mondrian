@@ -212,7 +212,7 @@
       </releases>
       <id>pentaho</id>
       <name>Pentaho</name>
-      <url>http://repo.pentaho.org/artifactory/repo</url>
+      <url>https://public.nexus.pentaho.org/content/groups/omni/</url>
     </repository>
   </repositories>
   <build>
@@ -421,6 +421,7 @@
               <goal>read-project-properties</goal>
             </goals>
             <configuration>
+              <quiet>true</quiet>
               <files>
                 <file>mondrian.properties</file>
                 <file>build.properties</file>
